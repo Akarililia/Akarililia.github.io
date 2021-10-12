@@ -159,11 +159,11 @@
                 </a>
             
                 
-                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
                     <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-folder"></i>
+                        <i class="iconfont icon-bookmark"></i>
                     </div>
-                    <div class="mdui-list-item-content">分类</div>
+                    <div class="mdui-list-item-content">标签</div>
                 </a>
             
                 
@@ -172,22 +172,6 @@
                         <i class="iconfont icon-archive"></i>
                     </div>
                     <div class="mdui-list-item-content">归档</div>
-                </a>
-            
-                
-                <a href="/tools/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-tools"></i>
-                    </div>
-                    <div class="mdui-list-item-content">工具箱</div>
-                </a>
-            
-                
-                <a href="/categories/%E5%9B%BE%E9%9B%86/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-gallery"></i>
-                    </div>
-                    <div class="mdui-list-item-content">图集</div>
                 </a>
             
             <div class="mdui-list-item mdui-ripple">
@@ -262,7 +246,7 @@
       
       
         <div class="post-header"> 
-  <a class="post-header-title" href="/2021/10/12/tags/">tags</a>
+  <a class="post-header-title" href="/2021/10/12/java1/">为什么有些异常throw出去需要在函数头用throws声明，一些就不用。</a>
   <div class="post-header-meta">
     <span>
       <span class="iconfont icon-calendar"></span>
@@ -274,7 +258,7 @@
     </span>
     <span>
       <span class="iconfont icon-folder"></span>
-      分类于:&nbsp;
+      分类于:&nbsp;<a class="category-link" href="/categories/Java/">Java</a>
     </span>
     
   </div>
@@ -285,18 +269,24 @@
 
       
       
-  <div class="tag-line-space"></div>
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/Java/ >Java</a>
+      </i>
+    
+  </div>
 
       
       <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
         <div class="post-abstract mdui-typo ">
           
-            
+            <p>​    所谓checked exception和runtime exception<br>​    checked exception告知外部用户此方法在某些情况下可能抛出这个错误，你应该捕获并处理错误以便程序在可能的情况下能够继续运行下去（当然你也可以通过throws声明将异常再往上层暴露，但终究有一层是要去catch这个异常的）。这些错误往往是可预期而且可以作为异常流来处理的。<strong>checked exception作为语法上的一种强制措施让你在代码编译阶段就必须对异常进行处理。</strong></p>
           
         </div>
         
         <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/tags/">阅读更多</a>
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/java1/">阅读更多</a>
         </div>
       </div>
     </article>
@@ -305,7 +295,7 @@
       
       
         <div class="post-header"> 
-  <a class="post-header-title" href="/2021/10/12/1/">1</a>
+  <a class="post-header-title" href="/2021/10/12/Java%E6%B3%9B%E5%9E%8B%20IO%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%20%E5%8F%8D%E5%B0%84/">Java泛型 IO 网络编程 反射</a>
   <div class="post-header-meta">
     <span>
       <span class="iconfont icon-calendar"></span>
@@ -317,7 +307,7 @@
     </span>
     <span>
       <span class="iconfont icon-folder"></span>
-      分类于:&nbsp;<a class="category-link" href="/categories/server/">server</a>
+      分类于:&nbsp;<a class="category-link" href="/categories/Java/">Java</a>
     </span>
     
   </div>
@@ -328,18 +318,26 @@
 
       
       
-  <div class="tag-line-space"></div>
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/Java/ >Java</a>
+      </i>
+    
+  </div>
 
       
       <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
         <div class="post-abstract mdui-typo ">
           
-            
+            <h1 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h1><p> 静态方法中不能使用类的泛型。 </p>
+<p>泛型数组</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//T[] arr =new T[10];//编译不通过</span></span><br><span class="line">T[] arr= (T[])<span class="keyword">new</span> Object[<span class="number">10</span>];</span><br></pre></td></tr></table></figure>
           
         </div>
         
         <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/1/">阅读更多</a>
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/Java%E6%B3%9B%E5%9E%8B%20IO%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%20%E5%8F%8D%E5%B0%84/">阅读更多</a>
         </div>
       </div>
     </article>
@@ -348,7 +346,7 @@
       
       
         <div class="post-header"> 
-  <a class="post-header-title" href="/2021/10/12/%E6%B3%9B%E5%9E%8B/">Java高级</a>
+  <a class="post-header-title" href="/2021/10/12/Java%E7%BA%BF%E7%A8%8B%20%E5%B8%B8%E7%94%A8%E7%B1%BB%20%E6%B3%A8%E8%A7%A3%20%E9%9B%86%E5%90%88/">Java线程 常用类 注解 集合</a>
   <div class="post-header-meta">
     <span>
       <span class="iconfont icon-calendar"></span>
@@ -360,7 +358,7 @@
     </span>
     <span>
       <span class="iconfont icon-folder"></span>
-      分类于:&nbsp;
+      分类于:&nbsp;<a class="category-link" href="/categories/Java/">Java</a>
     </span>
     
   </div>
@@ -371,57 +369,13 @@
 
       
       
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <h2 id="JavaBean"><a href="#JavaBean" class="headerlink" title="JavaBean"></a>JavaBean</h2><p>是特殊的 Java 类，使用 Java 语言书写，并且遵守 JavaBean API 规范。</p>
-<p>接下来给出的是 JavaBean 与其它 Java 类相比而言独一无二的特征：</p>
-<ul>
-<li>提供一个默认的无参构造函数。</li>
-<li>需要被序列化并且实现了 Serializable 接口。</li>
-<li>可能有一系列可读写属性。</li>
-<li>可能有一系列的 getter 或 <strong>setter</strong> 方法。</li>
-</ul>
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/%E6%B3%9B%E5%9E%8B/">阅读更多</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/2021/10/12/java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5/"></a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      发布于:&nbsp;2021-10-12
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      更新于:&nbsp;2021-10-12
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      分类于:&nbsp;
-    </span>
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/Java/ >Java</a>
+      </i>
     
   </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
 
       
       <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
@@ -434,7 +388,7 @@
         </div>
         
         <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5/">阅读更多</a>
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/Java%E7%BA%BF%E7%A8%8B%20%E5%B8%B8%E7%94%A8%E7%B1%BB%20%E6%B3%A8%E8%A7%A3%20%E9%9B%86%E5%90%88/">阅读更多</a>
         </div>
       </div>
     </article>
@@ -443,7 +397,7 @@
       
       
         <div class="post-header"> 
-  <a class="post-header-title" href="/2021/10/12/java8/"></a>
+  <a class="post-header-title" href="/2021/10/12/Java%20Lambda%20StreamApi/">Java Lambda StreamApi</a>
   <div class="post-header-meta">
     <span>
       <span class="iconfont icon-calendar"></span>
@@ -455,7 +409,7 @@
     </span>
     <span>
       <span class="iconfont icon-folder"></span>
-      分类于:&nbsp;
+      分类于:&nbsp;<a class="category-link" href="/categories/Java/">Java</a>
     </span>
     
   </div>
@@ -466,20 +420,26 @@
 
       
       
-  <div class="tag-line-space"></div>
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/Java/ >Java</a>
+      </i>
+    
+  </div>
 
       
       <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
         <div class="post-abstract mdui-typo ">
           
-            <h1 id="java8"><a href="#java8" class="headerlink" title="java8"></a>java8</h1><h3 id="Lambda-一种匿名函数"><a href="#Lambda-一种匿名函数" class="headerlink" title="Lambda 一种匿名函数"></a>Lambda 一种匿名函数</h3><p><code>(形参列表)-&gt;&#123;方法体&#125;</code></p>
+            <h3 id="Lambda-一种匿名函数"><a href="#Lambda-一种匿名函数" class="headerlink" title="Lambda 一种匿名函数"></a>Lambda 一种匿名函数</h3><p><code>(形参列表)-&gt;&#123;方法体&#125;</code></p>
 <p><strong>函数式接口</strong>:    接口中只有一个抽象方法</p>
-<p>我们可以在一个接口上使...
+<p>我们可以在一个接口上使用@Functionallnterface注解，这样做可以检查它是否是一个函数式接口。同时javadoc也会包含一条声明，说明这个接口是一个函数式接口。</p>
           
         </div>
         
         <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/java8/">阅读更多</a>
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/Java%20Lambda%20StreamApi/">阅读更多</a>
         </div>
       </div>
     </article>
@@ -488,55 +448,7 @@
       
       
         <div class="post-header"> 
-  <a class="post-header-title" href="/2021/10/12/java/"></a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      发布于:&nbsp;2021-10-12
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      更新于:&nbsp;2021-08-25
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      分类于:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <h1 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h1><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p><code>java.lang</code>  </p>
-<ul>
-<li> <code>lang</code>=language;</li>
-</ul>
-<hr>
-<h3 id="Mvc-设计模式"><a href="#Mvc-设计模式" class="headerli...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/java/">阅读更多</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/2021/10/12/hello-world/">Hello World</a>
+  <a class="post-header-title" href="/2021/10/12/javase/">Java重写 异常 内部类 异常</a>
   <div class="post-header-meta">
     <span>
       <span class="iconfont icon-calendar"></span>
@@ -548,7 +460,7 @@
     </span>
     <span>
       <span class="iconfont icon-folder"></span>
-      分类于:&nbsp;
+      分类于:&nbsp;<a class="category-link" href="/categories/Java/">Java</a>
     </span>
     
   </div>
@@ -559,18 +471,31 @@
 
       
       
-  <div class="tag-line-space"></div>
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/Java/ >Java</a>
+      </i>
+    
+  </div>
 
       
       <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
         <div class="post-abstract mdui-typo ">
           
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or yo...
+            <h1 id="JavaBean"><a href="#JavaBean" class="headerlink" title="JavaBean"></a>JavaBean</h1><p>是特殊的 Java 类，使用 Java 语言书写，并且遵守 JavaBean API 规范。</p>
+<p>接下来给出的是 JavaBean 与其它 Java 类相比而言独一无二的特征：</p>
+<ul>
+<li>提供一个默认的无参构造函数。</li>
+<li>需要被序列化并且实现了 Serializable 接口。</li>
+<li>可能有一系列可读写属性。</li>
+<li>可能有一系列的 <strong>getter</strong> 或 <strong>setter</strong> 方法。</li>
+</ul>
           
         </div>
         
         <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/hello-world/">阅读更多</a>
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/10/12/javase/">阅读更多</a>
         </div>
       </div>
     </article>

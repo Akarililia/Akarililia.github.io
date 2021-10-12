@@ -103,11 +103,11 @@
                 </a>
             
                 
-                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
                     <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-folder"></i>
+                        <i class="iconfont icon-bookmark"></i>
                     </div>
-                    <div class="mdui-list-item-content">分类</div>
+                    <div class="mdui-list-item-content">标签</div>
                 </a>
             
                 
@@ -116,22 +116,6 @@
                         <i class="iconfont icon-archive"></i>
                     </div>
                     <div class="mdui-list-item-content">归档</div>
-                </a>
-            
-                
-                <a href="/tools/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-tools"></i>
-                    </div>
-                    <div class="mdui-list-item-content">工具箱</div>
-                </a>
-            
-                
-                <a href="/categories/%E5%9B%BE%E9%9B%86/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-gallery"></i>
-                    </div>
-                    <div class="mdui-list-item-content">图集</div>
                 </a>
             
             <div class="mdui-list-item mdui-ripple">
@@ -207,61 +191,22 @@
     </div>
     <div id="page-card" class="mdui-card-content mdui-p-x-4">
         
-            
-            
-            
-            
-            
-        </div>
-    </div>
-    
-    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
-      <div class="mdui-tab" mdui-tab>
-        
-          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
-        
-          <a href="#comment-tab1" class="mdui-ripple">livere</a>
-        
-      </div>
-      
-        <div id="comment-tab0" class="mdui-p-a-2">
-          <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
-<script>
-  var gitalk = new Gitalk({
-    clientID: '',
-    clientSecret: '',
-    repo: '',
-    owner: '',
-    admin: [''],
-    id:  md5(location.pathname) ,
-    distractionFreeMode: 'true',
-  });
-  gitalk.render('gitalk-container');
-</script>
-        </div>
-      
-        <div id="comment-tab1" class="mdui-p-a-2">
-          <div id="lv-container" data-id="city" data-uid="">
-  <script type="text/javascript">
-    (function (d, s) {
-      var j, e = d.getElementsByTagName(s)[0];
-      if (typeof LivereTower === 'function') { return; }
-      j = d.createElement(s);
-      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-      j.async = true;
-      e.parentNode.insertBefore(j, e);
-    })(document, 'script');
-  </script>
-  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+            <div class="page-describe">
+    目前共计 1 个标签
 </div>
+<div class="tags-contain">
+    
+        <div class="mdui-chip tags-chip">
+            
+                <span class="mdui-chip-icon">5</span>
+            
+            <a class="mdui-chip-title" href="/tags/Java/">Java</a>
         </div>
-      
-    </div>
+    
+</div>
 
-
+        </div>
+        
 
   </main>
   <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
