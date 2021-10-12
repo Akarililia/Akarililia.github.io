@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+          
+            Lilia&#39;s Blog
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">Lilia&#39;s Blog</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">站点概览</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">关于</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/tools/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-tools"></i>
+                    </div>
+                    <div class="mdui-list-item-content">工具箱</div>
+                </a>
+            
+                
+                <a href="/categories/%E5%9B%BE%E9%9B%86/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-gallery"></i>
+                    </div>
+                    <div class="mdui-list-item-content">图集</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">夜间模式</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.gif"/>
+                
+            </div>
+            <div class="sidebar-author-name">Lilia</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="mailto:lilia@tongji.edu.cn" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">友情链接</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a target="_blank" rel="noopener" href="https://garybear.cn/hexo-theme-meadow/" class="mdui-list-item mdui-ripple">
+                            Meadow说明文档
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/2021/10/12/java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5/"></a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      发布于:&nbsp;2021-10-12
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      更新于:&nbsp;2021-10-12
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      分类于:&nbsp;
+    </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://example.com/2021/10/12/java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5/&pic=http://example.com/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=&url=http://example.com/2021/10/12/java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5/&via=Lilia" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2021/10/12/java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5/" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://example.com/2021/10/12/java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5/" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2021/10/12/java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5/&title=" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=Lilia&#39;s Blog&title=&summary=&pics=http://example.com/null&url=http://example.com/2021/10/12/java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5/" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://example.com/2021/10/12/java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5/&text=" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <p><code>alt + insert</code>     重写方法</p>
+<p><code>ctrl+左键</code>    进入方法</p>
+<p><code>alt+左键</code>    出方法</p>
+<span id="more"></span> 
+
+<h1 id="Java高级阶段"><a href="#Java高级阶段" class="headerlink" title="Java高级阶段"></a>Java高级阶段</h1><h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><h3 id="线程创建与回收"><a href="#线程创建与回收" class="headerlink" title="线程创建与回收"></a>线程创建与回收</h3><h4 id="方式一-创建Thread对象"><a href="#方式一-创建Thread对象" class="headerlink" title="方式一:创建Thread对象"></a>方式一:创建Thread对象</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//@遍历100以内的偶数</span></span><br><span class="line"><span class="comment">//1.创建一个继承Thread的子类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">extends</span> <span class="title">Thread</span></span>&#123;</span><br><span class="line">    <span class="comment">//2.重写Thread的run()方法,声明线程执行操作</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</span><br><span class="line">    	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">100</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i%<span class="number">2</span>==<span class="number">0</span>)&#123;</span><br><span class="line">                System.out.print(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;    </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//3.创建Thread子类的对象</span></span><br><span class="line">    MyThread t1=<span class="keyword">new</span> MyThread();</span><br><span class="line">    <span class="comment">//4.通过这个对象调用start()方法</span></span><br><span class="line">    t1.start();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="匿名子类"><a href="#匿名子类" class="headerlink" title="匿名子类"></a>匿名子类</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Thread()&#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">          	  System.out.println(Thread.currentThread().getName());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;.start();</span><br></pre></td></tr></table></figure>
+
+<h4 id="方式二-实现Runnable接口"><a href="#方式二-实现Runnable接口" class="headerlink" title="方式二:实现Runnable接口"></a>方式二:实现Runnable接口</h4><ol>
+<li>创建实现<em>Runnable</em>接口的类</li>
+<li>实现类去重写<em>Runnable</em>中的抽象方法*<code>run()</code>*</li>
+<li>创建对象<code>threadClass p=new threadClass()</code></li>
+<li>传入Thread的构造器中创建对象 <code>Thread t=new Thread(p)</code></li>
+<li>调用Thread对象的<code>t.start()</code></li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> NUM=<span class="number">100</span>;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">                System.out.println(NUM--);</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadTest1</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        MyThread p=<span class="keyword">new</span> MyThread();</span><br><span class="line">        Thread t1=<span class="keyword">new</span> Thread(p);</span><br><span class="line">        Thread t2=<span class="keyword">new</span> Thread(p);</span><br><span class="line">        t1.start();</span><br><span class="line">        t2.start();<span class="comment">//一个类多个线程操作</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="两种方式异同"><a href="#两种方式异同" class="headerlink" title="两种方式异同"></a>两种方式异同</h5><ol>
+<li>JAVA单继承如果有父类无法继承Thread</li>
+<li>实现方式 更适合处理多线程的数据共享</li>
+<li>都要实现<code>run()</code>;</li>
+</ol>
+<h4 id="Thread作用"><a href="#Thread作用" class="headerlink" title="Thread作用"></a>Thread作用</h4><ol>
+<li><p>启动线程</p>
+</li>
+<li><p>调用当前线程的run() :</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">run</span><span class="params">(Runnable target)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(target!=NULL)&#123;</span><br><span class="line">		target.run();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;<span class="comment">//代理模式</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="Thread相关方法"><a href="#Thread相关方法" class="headerlink" title="Thread相关方法"></a>Thread相关方法</h4><ul>
+<li><code>void start()</code></li>
+<li><code>void run()</code></li>
+<li><code>static Thread currentThread()</code>      返回当前线程</li>
+<li><code>String getName()</code>     获取当前线程名字</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//主线程设置名字</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Thread.currentThread.setName(<span class="string">&quot;Name  &quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><code>void setName()</code>    设置当前线程名字</li>
+<li><code>void yield()</code>     释放当前cpu执行权</li>
+<li><code>join()</code>      在 线程a中调用b的<code>join()</code> a进入阻塞状态,直到b被完全执行,a才结束阻塞</li>
+<li><code>sleep(long millis) throws InterruptedException </code>    写在 <code>run()</code>里面只能<code>try-catch</code>  让当前线程睡眠指定millitime毫秒数,变为阻塞状态</li>
+<li><code>isAlive()</code>判断线程是否存活</li>
+</ul>
+<h4 id="线程优先级"><a href="#线程优先级" class="headerlink" title="线程优先级"></a>线程优先级</h4><ul>
+<li><code>int getPriority()</code></li>
+<li><code>void getPriority()</code><ul>
+<li><em><code>MAX_PRIORITY</code></em>: 10</li>
+<li><em><code>NORM_PRIORITY</code></em>: 5</li>
+<li><em><code>MIN_PRIORITY</code></em>: 1</li>
+</ul>
+</li>
+</ul>
+<h3 id="线程生命周期"><a href="#线程生命周期" class="headerlink" title="线程生命周期"></a>线程生命周期</h3><h3 id="线程同步"><a href="#线程同步" class="headerlink" title="线程同步"></a>线程同步</h3><h4 id="同步代码块"><a href="#同步代码块" class="headerlink" title="同步代码块"></a>同步代码块</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Object obj = n<span class="comment">//互斥的代码要&quot;同一把锁&quot;继承方式多线程可以用static</span></span><br><span class="line"><span class="keyword">synchronized</span>(同步监视器 Object obj)&#123;</span><br><span class="line">	<span class="comment">//执行的代码</span></span><br><span class="line">&#125;<span class="comment">//实现方式可以用 this 充当同步监视器 </span></span><br><span class="line">	<span class="comment">//继承方式 可以用 当前类.class(慎用)</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="同步方法"><a href="#同步方法" class="headerlink" title="同步方法"></a>同步方法</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>&#123;</span><br><span class="line">&#125;<span class="comment">//在实现方式下使用 this充当同步监视器</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>&#123;</span><br><span class="line">&#125;<span class="comment">//在继承方式下使用 同步监视器是当前类本身</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h5><p><code>Alt+Shift+Z</code></p>
+<h4 id="双重检查锁"><a href="#双重检查锁" class="headerlink" title="双重检查锁"></a>双重检查锁</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Bank</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Bank instance=<span class="keyword">null</span>;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Bank</span><span class="params">()</span></span>&#123;</span><br><span class="line">&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Bank <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance==<span class="keyword">null</span>)</span><br><span class="line">            <span class="keyword">synchronized</span>(Bank.class)&#123;</span><br><span class="line">            <span class="keyword">if</span>(instance==<span class="keyword">null</span>)&#123;</span><br><span class="line">                instance=<span class="keyword">new</span> Bank();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">       	<span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;<span class="comment">//单例模式 线程安全 高效</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="ReentrantLock"><a href="#ReentrantLock" class="headerlink" title="ReentrantLock"></a>ReentrantLock</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Class A implements Runnable&#123;</span><br><span class="line">	 ReentrantLock lock=<span class="keyword">new</span> ReentrantLock();</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</span><br><span class="line">        lock.lock();</span><br><span class="line">        <span class="keyword">try</span>&#123;</span><br><span class="line">            <span class="comment">//同步代码</span></span><br><span class="line">        &#125;<span class="keyword">finally</span>&#123;</span><br><span class="line">            lock.unlock();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="synchronized与ReentrantLock区别"><a href="#synchronized与ReentrantLock区别" class="headerlink" title="synchronized与ReentrantLock区别"></a>synchronized与ReentrantLock区别</h4><ul>
+<li>synchronized在执行完相应的代码以后自动释放同步监视器</li>
+<li>Lock需要手动的去启动同步<code>lock()</code>与结束同步<code>unlock()</code></li>
+</ul>
+<h4 id="建议顺序"><a href="#建议顺序" class="headerlink" title="建议顺序"></a>建议顺序</h4><p>lock-&gt;代码块-&gt;同步函数</p>
+<h3 id="线程通信"><a href="#线程通信" class="headerlink" title="线程通信"></a>线程通信</h3><ul>
+<li><p><code>[同步监视器类.]wait()</code>    使当前线程阻塞,并释放同步监视器</p>
+</li>
+<li><p><code>[同步监视器类.]notify()</code>     唤醒一个阻塞线程,只会唤醒优先级高的</p>
+</li>
+<li><p><code>[同步监视器类.]notifyAll()</code>    唤醒所有阻塞线程</p>
+</li>
+<li><p>以上三种方法只能写在同步块或同步方法中</p>
+</li>
+<li><p>以上方法声明在Java.lang.Object中</p>
+</li>
+</ul>
+<h3 id="Jdk5-0新方式"><a href="#Jdk5-0新方式" class="headerlink" title="Jdk5.0新方式"></a>Jdk5.0新方式</h3><h4 id="Callable接口"><a href="#Callable接口" class="headerlink" title="Callable接口"></a>Callable接口</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用方法</span></span><br><span class="line"><span class="comment">//1.创建Callable实现类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">implements</span> <span class="title">Callable</span>&lt;<span class="title">Object</span>&gt;</span>&#123;</span><br><span class="line">    <span class="meta">@Overide</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">call</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//code;</span></span><br><span class="line">    &#125;<span class="comment">//使用Call方法主要是为了返回值(对象)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	A a =<span class="keyword">new</span> A();</span><br><span class="line">    <span class="comment">//2.Callable实现对象传入创建FutureTask对象</span></span><br><span class="line">    FutureTask&lt;Object&gt; f=<span class="keyword">new</span> Futuretask&lt;Object&gt;(a);<span class="comment">//构造器传实现Callable接口的类</span></span><br><span class="line">    <span class="comment">//3.FutureTask对象传入创建Thread对象d 运行</span></span><br><span class="line">    <span class="keyword">new</span> Thread(f).start();<span class="comment">//FutureTask实现了Runnable接口</span></span><br><span class="line">    <span class="keyword">try</span>&#123;</span><br><span class="line">        Object obj = f.get();<span class="comment">//get()返回的是A的call的返回值</span></span><br><span class="line">    &#125;<span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>![111 (1)](C:\Users\Lilia\Desktop\笔记图片\111 (1).png)</p>
+<h4 id="线程池"><a href="#线程池" class="headerlink" title="线程池???????"></a>线程池???????</h4><p>避免频繁创建(提高响应速度,降低资源消耗)销毁</p>
+<p>实现重复利用,便于资源管理</p>
+<h5 id="ExecutorService接口"><a href="#ExecutorService接口" class="headerlink" title="ExecutorService接口"></a>ExecutorService接口</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//1.提供指定线程数量的线程池</span></span><br><span class="line">    Executors service =<span class="keyword">new</span> Executors.newFixedThreadPool(nThreads:<span class="number">10</span>);</span><br><span class="line">    <span class="comment">//2.执行指定的线程操作.需要提供实现RUnnable或Callable接口实现类的对象</span></span><br><span class="line">    service.execute(Runnable runnable);<span class="comment">//使用Runnable</span></span><br><span class="line">    service.submit(Callable callable);<span class="comment">//适合Callable</span></span><br><span class="line">    service.shutdown();</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Java常用类"><a href="#Java常用类" class="headerlink" title="Java常用类"></a>Java常用类</h2><h3 id="字符串String"><a href="#字符串String" class="headerlink" title="字符串String"></a>字符串String</h3><ul>
+<li> String==内部==<code>final char[] value</code>==值==不可变</li>
+<li>方式是通过字面量赋值,需要改变时会在==方法区常量池==新建一个去改变String变量的的==引用值==.</li>
+<li>new方式在堆空间中创建一个新空间指向方法区常量池</li>
+</ul>
+<h3 id="StringBuffer-Builder"><a href="#StringBuffer-Builder" class="headerlink" title="StringBuffer/Builder"></a>StringBuffer/Builder</h3><p>三者异同 :   都用char[]储存</p>
+<ul>
+<li><p>String: 不可变</p>
+</li>
+<li><p>StringBuffer: 可变;线程安全,效率低</p>
+<ul>
+<li>底层创建了一个16位的数组</li>
+<li>需要扩容默认情况申请原来二倍+2</li>
+</ul>
+</li>
+<li><p>StringBuilder: 可变;线程不安全;==效率高==</p>
+<ul>
+<li>同上</li>
+</ul>
+</li>
+</ul>
+<p>开发中建议使用<code>StringBuffer(int capacity)</code>或者<code>StringBuilder(int capacity)</code></p>
+<p>增: <code>append(xxx)</code><br>删: <code>delete(int start,int end)</code><br>改: <code>setCharAt(int n ,char ch) </code>/<code> replace(int start, int end，string str)</code></p>
+<p>查: <code>charAt(int n )</code><br>插: <code>insert(int offset, xxx)</code></p>
+<p>长度: <code>Length()</code><br>遍历:<code>for() +charAt()</code></p>
+<h3 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h3><ul>
+<li><code>tostring()</code>: 显示当前年月日时分秒</li>
+<li><code>getTime()</code>: 获取Date的毫秒数返回时间戳</li>
+</ul>
+<h3 id="SimpleDateFormat"><a href="#SimpleDateFormat" class="headerlink" title="SimpleDateFormat"></a>SimpleDateFormat</h3><ul>
+<li><p>格式化： 日期–&gt;字符串</p>
+</li>
+<li><p>解析: 字符串–&gt;日期</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//默认方法</span></span><br><span class="line">    SimpleDateFormat sdf = <span class="keyword">new</span> SimpleDateFormat();</span><br><span class="line">    Date date=<span class="keyword">new</span> date();</span><br><span class="line">    <span class="comment">//格式化</span></span><br><span class="line">    String str=sdf.format(date);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//解析</span></span><br><span class="line">    Date date2=sdf.parse(<span class="string">&quot;yy/MM/dd 上午hh:mm&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//自定格式方法</span></span><br><span class="line">    SimpleDateFormat sdf1 = <span class="keyword">new</span> SimpleDateFormat(<span class="string">&quot;pattern&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="Calendar"><a href="#Calendar" class="headerlink" title="Calendar"></a>Calendar</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//调用静态方法实例化</span></span><br><span class="line">   Calendar calendar=Calendar.getInstance();</span><br><span class="line"></span><br><span class="line">   calendar.get(<span class="keyword">int</span> Calendar.FIELD);<span class="comment">//返回今天是第几天</span></span><br><span class="line"></span><br><span class="line">   calendar.set(<span class="keyword">int</span> Calendar.FIELD,<span class="keyword">int</span> a)<span class="comment">//把日期改了</span></span><br><span class="line">       </span><br><span class="line">   calendar.add(<span class="keyword">int</span> Calendar.FIELD,<span class="keyword">int</span> a)<span class="comment">//再加几天</span></span><br><span class="line">       </span><br><span class="line">   Date date=calendar.getTime();<span class="comment">//日历类--&gt;Date</span></span><br><span class="line"></span><br><span class="line">Date date1=<span class="keyword">new</span> Date();</span><br><span class="line">calendar.setime(date1);<span class="comment">//设置时间</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Java-time-localDateTime"><a href="#Java-time-localDateTime" class="headerlink" title="Java.time.localDateTime"></a>Java.time.localDateTime</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//localDate localTime localDateTime 具有不可变性</span></span><br><span class="line"><span class="comment">//localDateTime 更常用</span></span><br><span class="line"><span class="comment">//now():获取当前时间</span></span><br><span class="line">LocalTime localTime=localTime.now();</span><br><span class="line"><span class="comment">//of():设置指定时间</span></span><br><span class="line">LocalTime localTime=localTime.of(<span class="number">2021</span>,<span class="number">9</span>,<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//getXxx():</span></span><br><span class="line">localDateTime.getDayOfMonth();</span><br><span class="line"> </span><br><span class="line"><span class="comment">//withXxx()/plus()/minus():返回一个修改后的时间 原时间不变</span></span><br><span class="line">LocalDate ld1=localDateTime.withDayOfMoth( <span class="keyword">int</span> a);</span><br><span class="line">LocalDate ld2=localDateTime.plusDays(<span class="keyword">int</span> a);</span><br><span class="line">LocalDate ld3=localDateTime.minusDay(<span class="keyword">int</span> a);</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Java-time-Instant"><a href="#Java-time-Instant" class="headerlink" title="Java.time.Instant"></a>Java.time.Instant</h3><p>用来记录一个时间点的瞬间/时间戳</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">//now() 返回0时区当前Instant对象</span></span><br><span class="line">   Instant instant=Instant.now();</span><br><span class="line"></span><br><span class="line"><span class="comment">//ofpochMilli()返回指定时间Instant对象</span></span><br><span class="line">Instant instant=Instant.ofpochMilli(<span class="keyword">long</span> l);</span><br><span class="line"></span><br><span class="line">   <span class="comment">//atOffSet(ZoneOffset offset) 结合实际偏移量设置一个OffsetDateTime</span></span><br><span class="line">OffsetDateTime offsetDateTime=instant.atOffset(ZoneOffset.ofHour(<span class="number">8</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">//toEpochMilli()获取对应毫秒数</span></span><br><span class="line"><span class="keyword">long</span> l =instant.toEpochMilli();</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="DateTimeFormatter"><a href="#DateTimeFormatter" class="headerlink" title="DateTimeFormatter"></a>DateTimeFormatter</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">//实例化</span></span><br><span class="line">   <span class="comment">//1.预定义方法</span></span><br><span class="line">DateTimeFormatter formatter=DateTimeFormatter.ISO_LOCAL_DATE_TIME;</span><br><span class="line"><span class="comment">//格式化  日期--&gt;字符串</span></span><br><span class="line">String str=formatter.format(localDateTime);</span><br><span class="line"><span class="comment">//解析</span></span><br><span class="line">TemporalAccessor parse=formatter.parse(<span class="string">&quot;2019-02-18T12:23:12.345&quot;</span>);<span class="comment">//一个实现localDate localDateTime localTime的接口</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//2.本地化格式ofLocalizedDateTime() ofLocalizedDate()方法</span></span><br><span class="line"><span class="comment">//FormatStyle.LONG / FormatStyLe.MEDIUM /FormatStyLe.SHORT:适用于LocalDateTime</span></span><br><span class="line"><span class="comment">//... FormatStyle.FULL</span></span><br><span class="line">DateTimeFormatter d1=DateTimeFormatter.ofLocalizedDateTime(FormatStyle.XXX);</span><br><span class="line"><span class="comment">//格式化</span></span><br><span class="line"><span class="comment">//解析</span></span><br><span class="line"><span class="comment">//同上</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//常用自定义 ofPattern(&quot;yyyy-MM-dd hh:mm:ss&quot;)</span></span><br><span class="line">DateTimeFormatter formatter3=DateTimeFormatter.ofPattern(<span class="string">&quot;yyyy-MM-dd hh:mm:ss&quot;</span>);</span><br><span class="line"><span class="comment">//格式化</span></span><br><span class="line"><span class="comment">//解析</span></span><br><span class="line"><span class="comment">//同上</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Java比较器"><a href="#Java比较器" class="headerlink" title="Java比较器"></a>Java比较器</h3><h4 id="自然排序java-Lang-Comparable"><a href="#自然排序java-Lang-Comparable" class="headerlink" title="自然排序java.Lang.Comparable"></a>自然排序java.Lang.Comparable</h4><ul>
+<li>重写*<code>compareTo( )</code>*的规则:<ul>
+<li>如果当前对象this大于形参对象obj，则返回正整数</li>
+<li>如果当前对象this小于形参对象obj，则返回负整数</li>
+<li>如果当前对象this等于形参对象obj，则返回零。|</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="title">implement</span> <span class="title">Comparable</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> attribute;</span><br><span class="line">    <span class="comment">//String str;</span></span><br><span class="line">    <span class="comment">//重新comparable的compareTo()</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compareTo</span><span class="params">(Object o)</span>P</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>( o <span class="keyword">instanceof</span> A)&#123;</span><br><span class="line">            A a=(A)o;<span class="comment">//强转</span></span><br><span class="line">            <span class="keyword">return</span> Integer.compare(<span class="keyword">this</span>.attribute,a.attribute);</span><br><span class="line">            <span class="comment">//return -this.str.compareTo(a.str); 加上负号可以实现从高到低</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">&quot;错误&quot;</span>);<span class="comment">//运行时异常不用处理</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="定制排序-比较器-java-util-Comparator"><a href="#定制排序-比较器-java-util-Comparator" class="headerlink" title="定制排序 比较器 java.util.Comparator"></a>定制排序 比较器 java.util.Comparator</h4><ul>
+<li><p>当类型没实现<em>Comparable</em>接口而又不方便修改代码，</p>
+<p>或者实现了，排序规则不适合当前的操作，</p>
+<p>那么可以使用<em>Comparator</em>(比较器)的对象来排序</p>
+</li>
+<li><p>2.重写*<code>compare(object o1,object o2)</code>*方法，比较o1和o2的大小:</p>
+<ul>
+<li>如果方法返回正整数，则表示o1大于o2 ;</li>
+<li>如果返回0，表示相等;</li>
+<li>返回负整数，表示o1小于o2。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    String[] arr= <span class="keyword">new</span> String[]&#123;...&#125;;</span><br><span class="line">    </span><br><span class="line">   <span class="comment">//排序方法传入比较器</span></span><br><span class="line">    Arry.sort(arr,<span class="keyword">new</span> Comparator()&#123;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Object o1,Object o1)</span></span>&#123;</span><br><span class="line">        	<span class="keyword">if</span>(o1 <span class="keyword">instanceof</span> string &amp;&amp; o2 <span class="keyword">instanceof</span> string)&#123;</span><br><span class="line">                String s1 = (String) o1;</span><br><span class="line">                String s2 = (String) o2;</span><br><span class="line">                <span class="comment">//比较代码</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">&quot;错误&quot;</span>);<span class="comment">//运行时异常不用处理</span></span><br><span class="line">        &#125;<span class="comment">// **接口多态 -&gt; 匿名对象** </span></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h3><p>定义在类内的常量类</p>
+<p><code>public static final</code></p>
+<h4 id="jdk5-0之前自定义枚举类"><a href="#jdk5-0之前自定义枚举类" class="headerlink" title="jdk5.0之前自定义枚举类"></a>jdk5.0之前自定义枚举类</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Season</span></span>&#123;</span><br><span class="line">    <span class="comment">//声明Season对象属性</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> String seasonName;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//私有化构造器</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Season</span><span class="params">(String seasonName)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.seasonName=seasonName;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//当前枚举类多个对象</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Season SPRING=<span class="keyword">new</span> Season(<span class="string">&quot;春天&quot;</span>);</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Season SUMMER=<span class="keyword">new</span> Season(<span class="string">&quot;夏天&quot;</span>);</span><br><span class="line">    <span class="comment">//********//</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">//其他诉求: 枚举类对象的属性</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getSeasonName</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> seasonName;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="jdk5-0-以后-使用enum关键字定义"><a href="#jdk5-0-以后-使用enum关键字定义" class="headerlink" title="jdk5.0 以后 使用enum关键字定义"></a>jdk5.0 以后 使用enum关键字定义</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//默认继承与java.lang.ENUM类</span></span><br><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Season</span></span>&#123;</span><br><span class="line">    <span class="comment">//1,当前枚举类多个对象,多个对象之间用逗号隔开;</span></span><br><span class="line">  	SPRING(<span class="string">&quot;春天&quot;</span>),</span><br><span class="line">    SUMMER(<span class="string">&quot;夏天&quot;</span>),</span><br><span class="line">    <span class="comment">//********//</span></span><br><span class="line">    WINTER(<span class="string">&quot;冬天&quot;</span>);</span><br><span class="line">  </span><br><span class="line">    <span class="comment">//2,声明Season对象属性</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> String seasonName;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//3,私有化构造器</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Season</span><span class="params">(String seasonName)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.seasonName=seasonName;</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">    <span class="comment">//4,其他诉求: 枚举类对象的属性</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getSeasonName</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> seasonName;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//toString一般不重写, 使用ENUM的toString方法</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="ENUM"><a href="#ENUM" class="headerlink" title="ENUM"></a>ENUM</h4><p><code>values()</code>: 返回枚举数组</p>
+<p><code>valueOf(String objName)</code>:提供名字返回对象</p>
+<p><code>toString()</code>: 返回枚举类的</p>
+<h4 id="枚举类继承接口"><a href="#枚举类继承接口" class="headerlink" title="枚举类继承接口"></a>枚举类继承接口</h4><ul>
+<li><p>实现接口,在enum类中实现抽象方法 直接<code>implement</code></p>
+</li>
+<li><p>在每个枚举类中实现抽象方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Season</span> <span class="title">implement</span> <span class="title">interface</span></span>&#123;</span><br><span class="line">  	SPRING(<span class="string">&quot;春天&quot;</span>)&#123;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">methon</span><span class="params">()</span></span>;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//*******//</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="注解-Annotation"><a href="#注解-Annotation" class="headerlink" title="注解(Annotation)"></a>注解(Annotation)</h2><ul>
+<li><p>Annotation其实就是代码里的特殊标记,这些标记可以在编译,类加载,运行时被读取,并执行相应的处理。通过使用Annotation,程序员可以在不改变原有逻辑的情况下,在源文件中嵌入一些补充信息。代码分析工具、开发工具和部署工具可以通过这些补充信息进行验证或者进行部署。</p>
+</li>
+<li><p>在JavaSE中，注解的使用目的比较简单，例如标记过时的功能，忽略警告等。在JavaEE/Android中注解占据了更重要的角色，例如用来配置应用程序的任何切面，代替JavaEE旧版中所遗留的繁冗代码和XML配置等。</p>
+</li>
+</ul>
+<h4 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h4><ul>
+<li><p>相关文档注解</p>
+</li>
+<li><p>在编译时进行格式==检查==的注解</p>
+<ul>
+<li><em>@Override</em>:限定重写父类方法,该注解只能用于方法</li>
+<li><em>@Deprecated</em>:用于==表示==所修饰的元素(类,方法等)==已过时==。通常是因为所修饰的结构危险或存在更好的选择</li>
+<li><em>@SuppressWarnings</em>:抑制编译器警告</li>
+</ul>
+</li>
+<li><p>自定义注解(参照*@SuppressWarnings*)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//注解声明为@interface</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@inteface</span> MyAnnotation&#123;</span><br><span class="line">    <span class="comment">//内部定义成员通常用value</span></span><br><span class="line">    <span class="comment">//可以使用默认值</span></span><br><span class="line">    String[] value() <span class="keyword">default</span> <span class="string">&quot;Str&quot;</span>;</span><br><span class="line">    <span class="comment">//如果没有成员变量,则是一个表示作用</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//注解又成员变量,则要指明成员值</span></span><br><span class="line">    <span class="meta">@MyAnotation(value=&quot;Str&quot;)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="jdk5-0-以后提供4个标准的Meta-annotation"><a href="#jdk5-0-以后提供4个标准的Meta-annotation" class="headerlink" title="jdk5.0 以后提供4个标准的Meta-annotation"></a>jdk5.0 以后提供4个标准的Meta-annotation</h4><p>​    对现有注解进行解释说明的注解</p>
+<blockquote>
+<p>​    注解的注解</p>
+</blockquote>
+<ul>
+<li><code>Retention</code>     表明注解的生命周期<ul>
+<li><code>SOURCE</code>    <code>CLASS``````````````````````````````````````````xd</code>RUNTIME`</li>
+</ul>
+</li>
+<li><code>Target</code>     表明可以注解对象的类型</li>
+</ul>
+<p>​    ——————–出现频率低—————————</p>
+<ul>
+<li><p><code>Documented</code>     javadoc解析时会保留该注解</p>
+</li>
+<li><p><code>Inherited</code>       该注解将具有继承性</p>
+</li>
+</ul>
+<h4 id="jdk8"><a href="#jdk8" class="headerlink" title="jdk8"></a>jdk8</h4><h5 id="可重复注解"><a href="#可重复注解" class="headerlink" title="可重复注解"></a>可重复注解</h5><p><strong>before:</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotations&#123;</span><br><span class="line">    MyAnnotation[] value();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//-----------***-----------//</span></span><br><span class="line"><span class="meta">@MyAnnotations(&#123; @MyAnnotation(value=&quot;Str&quot;), @MyAnnotation(value=&quot;Str1&quot;)&#125;)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>after:</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1,在MyAnnotation上声明@Repeatable，成员值为MyAnnotations.class</span></span><br><span class="line"><span class="comment">//2.MyAnnotation的Target和Retention和MyAnnotations相同。</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@Repeatable(MyAnnotations.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation&#123;</span><br><span class="line">       String[] value() <span class="keyword">default</span> <span class="string">&quot;Str&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="类型注解"><a href="#类型注解" class="headerlink" title="类型注解"></a>类型注解</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> &lt;@<span class="title">MyAnnotation</span> <span class="title">T</span>&gt;</span>&#123;</span><br><span class="line">&#125;<span class="comment">//泛型注解</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="集合框架"><a href="#集合框架" class="headerlink" title="集合框架"></a>集合框架</h2><h4 id="Collection-单列集合-内部装的都是对象"><a href="#Collection-单列集合-内部装的都是对象" class="headerlink" title="Collection   单列集合 内部装的都是对象"></a>Collection   单列集合 内部装的都是对象</h4><h5 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h5><ul>
+<li><p><code>void add(T t)</code>,</p>
+</li>
+<li><p> <code>int size()</code> : 容器大小, </p>
+</li>
+<li><p><code> void addAll(Collection col)</code>, </p>
+</li>
+<li><p><code>boolean isEmpty()</code> ,</p>
+</li>
+<li><p><code>void clear()</code>, </p>
+</li>
+<li><p><code>List asList()</code></p>
+<!--以下需要调用重写的equals()--></li>
+<li><p><code>contains() </code>,</p>
+</li>
+<li><p><code>boolean containsAll(Collection coll)</code>,</p>
+</li>
+<li><p><code>boolean remove(Object obj)</code>,</p>
+</li>
+<li><p><code>boolean removeAll(Collection coll)</code> //移除coll的元素集合</p>
+</li>
+<li><p><code>boolean retainAll(Collection coll)</code>//求交集</p>
+</li>
+<li><p><code>boolean equals(Object obj)</code></p>
+</li>
+<li><p><code>Object[] toArry()</code></p>
+</li>
+<li><p><code>E IteratorTest()</code> 返回Iterator接口的实例,用于元素遍历</p>
+</li>
+</ul>
+<h4 id="List-元素有序-可重复的列表"><a href="#List-元素有序-可重复的列表" class="headerlink" title="List:元素有序,可重复的列表"></a>List:元素有序,可重复的列表</h4><ul>
+<li><strong>ArrayList</strong>: 主要实现类,, 线程不安全, 效率高,底层用<code>Object[]</code>存储<ul>
+<li>1.7    建议使用带参数构造器<code>new ArryList(int capacity)</code>, 扩容默认1.5倍</li>
+<li>1.8    <code>new ArryList()</code>底层创建一个Object[] 初始化为{},第一次调用add,才创建长度为10的数组</li>
+</ul>
+</li>
+<li><strong>LinkedList</strong>: 对于频繁插入删除, 底层使用双向链表存储</li>
+<li><strong>Vector</strong>: 古老实现类,线程安全,效率低,底层用<code>Object[]</code>存储</li>
+<li>常用方法:<ul>
+<li><code>void add(int index， 0bject ele)</code>:在index位置插入ele元素</li>
+<li><code>boolean addAll(int index，collection eles)</code>:从index位置开始将eLes中的所有元素添加进来</li>
+<li><code>object get(int index)</code>:获取指定index位置的元素</li>
+<li><code>int indexof(object obj)</code>:返回obj在集合中首次出现的位置</li>
+<li><code>int lastIndexof(object obj)</code>:返回obj在当前集合中末次出现的位置</li>
+<li><code>0bject remove(int index)</code>:移除指定index位置的元素，并返回此元素</li>
+<li><code>0bject set(intindex，object ele)</code>:设置指定index位置的元素为eLe</li>
+<li><code>list sublist(int fromIndex, int toIndex)</code>:返回从fromIndex到toIndex位置的子集合</li>
+</ul>
+</li>
+</ul>
+<h4 id="Iterator迭代器"><a href="#Iterator迭代器" class="headerlink" title="Iterator迭代器"></a>Iterator迭代器</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Iterator iterator=coll.iterator();</span><br><span class="line"><span class="keyword">while</span>(iterator.hasNext())&#123;</span><br><span class="line">    System.out.println(iterator.next());<span class="comment">//初始指向初始的前一个位置;</span></span><br><span class="line">&#125;</span><br><span class="line">    <span class="comment">//内部定义了remove(),可以在遍历时删除集合发元素,不同于集合内的remove()</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="foreach"><a href="#foreach" class="headerlink" title="foreach"></a>foreach</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(Object obj:coll)&#123;</span><br><span class="line">    System.out.println(obj);</span><br><span class="line">&#125;<span class="comment">//内部也是使用迭代器</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="Set接口-元素无序-不可重复的集合"><a href="#Set接口-元素无序-不可重复的集合" class="headerlink" title="Set接口:元素无序,不可重复的集合"></a>Set接口:元素无序,不可重复的集合</h4><ul>
+<li><p>Collection接口:单列集合,用来存储一个一个对象</p>
+<ul>
+<li><code>Set</code>接口:存储无序,不可重复数据(一定要重写<code>hashCode()</code>和<code>equals()</code>)<ul>
+<li><p>HashSet: 底层是<code>Hashmap()</code>.线程不安全,可以存Null</p>
+<ul>
+<li>LinkedHashSet:遍历其内部数据时,可以添加==顺序遍历==(在每个结构添加pre与next的双向链表)</li>
+</ul>
+</li>
+<li><p>TreeSet:底层红黑树,可以按特定属性进行排序</p>
+<ol>
+<li>向TreeSet中添加的数据，要求是相同类的对象</li>
+<li> 需要重写<em>comparable</em>的<code>compareTo()</code>方式</li>
+<li>使用比较器<code>Collection set=TreeSet(comparator cmp)</code></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>底层是map, value指向Objcet的静态对象</p>
+</blockquote>
+<h4 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h4><blockquote>
+<p>​    双列数据，保存具有映射关系“key-value对”的集合</p>
+</blockquote>
+<ul>
+<li><p>HashMap: 作为Map主要实现类; 线程不安全, 效率高:可以存储null的key ,==key使用set存,value使用Collection存==, 内部类:<code>Node</code></p>
+<ul>
+<li>LinkedHashMap: 保证顺序遍历, 内部类<code>Entry</code>里面多了before 与after指针</li>
+</ul>
+</li>
+<li><p>TreeMap: 用key排序的红黑树</p>
+</li>
+<li><p>Hashtable 古老的实现类, 线程安全, 效率低,不能存null的key</p>
+<ul>
+<li>Properties处理配置文档,key和value都是String</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MapTest</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Map map=<span class="keyword">new</span> HashMap();</span><br><span class="line">        map.put(<span class="keyword">null</span>,<span class="number">123</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>map.put(key,value)</code>对相同key具有修改功能</p>
+<h4 id="HashMap-jdk8"><a href="#HashMap-jdk8" class="headerlink" title="HashMap jdk8"></a>HashMap jdk8</h4><ul>
+<li><code>object put(Object key,0bject value)</code>:将指定key-value添加到(或修改)当前map对象    中</li>
+<li><code>void putALL(Map m)</code>:将m中的所有key-value对存放到当前map中</li>
+<li><code>object remove(object key)</code>:移除指定key的key-value对，并返回value</li>
+<li><code>void clear()</code>:清空当前map中的所有数据</li>
+<li><code>0bject get(0bject key)</code>:获取指定key对应的vaLue</li>
+<li><code>boolean containsKey(object key)</code>:是奇包含指定的key</li>
+<li><code>booLean containsvatue(object value)</code>:是否包含指定的vaLueint size():返回map 中key-value对的个数</li>
+<li><code>boolean isEmpty()</code>:判断当前map是否为空</li>
+<li><code>boolean equals(0bject obj)</code>:判断当前map和参数对象obj是否相等元视图操作的方法:</li>
+<li><code>set keySet()</code>返回所有key集合 可以用<code>iterator()</code>遍历</li>
+<li><code>Collection values()</code></li>
+<li><code>set entrySet()</code> </li>
+</ul>
+<ol>
+<li><p>new HashMap()∶底层没有创建一个长度为16的数组</p>
+</li>
+<li><p>jdk8底层的数组是:Node[],而非Entry[]</p>
+</li>
+<li><p>首次调用put()方法时，底层创建长度为16的数组</p>
+</li>
+<li><p>jdk7底层结构只有:数组+链表。jdk8中底层结构:数组+链表+红黑树。<br> 当数组的某一个索引位置上的元素以链表形式存在的数据个数&gt;8且当前数组的长度&gt;64点此时此索引位置上的所有数据改为使用红黑树存储。</p>
+</li>
+</ol>
+<p>  <code>DEFAULT_INITIAL_CAPACITY</code> : HashMap的默认容量，16</p>
+<p>  <code>DEFAULT_LOAD_FACTOR</code>: HashMap的默认加载因子:0.75<br>  <code>threshold</code>:扩容的临界值，=容量* 填充因子: 16* 0.75 =&gt;12<br>  <code>TREEIEY_THRESHOLD</code>: Bucket中链表长度大于该默认值，转化为红黑树:8</p>
+<p>  <code>MIN_TREEIFY_CAPACITY</code>:桶中的Node被树化时最小的hash表容量:64</p>
+<h4 id="properties-使用String-存储键值对"><a href="#properties-使用String-存储键值对" class="headerlink" title="properties (使用String 存储键值对)"></a>properties (使用String 存储键值对)</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">properties pros=<span class="keyword">new</span> properties();</span><br><span class="line">pros.load(fis);</span><br><span class="line">String str1=pros.key1;</span><br><span class="line">String str2=pros.key2;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="Collections-工具类的使用-可以操作Map"><a href="#Collections-工具类的使用-可以操作Map" class="headerlink" title="Collections 工具类的使用(可以操作Map)"></a>Collections 工具类的使用(可以操作Map)</h4><p><code>Collection.</code></p>
+<ul>
+<li><p><code>int frequency(collection，object)</code>:返回指定集合中指定元素的出现次数</p>
+</li>
+<li><p><code>void copy(List dest,List src)</code>:将src中的内容复制到dest中  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">list dest=Arrays.asList(<span class="keyword">new</span> Object[src.size()]);</span><br><span class="line">copy(dest,src);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>对于a.addall(b)， a = {x,y,y,z},是把b的元素添加到a中元素的后面。</p>
+<p>对于addall方法，可以使用aaddall(1,b),其中1表示你想从a哪个位置(index)把b的全部元素加入到a中，调用之后的结果为a = {x,y,z,y};</p>
+<p>对于Collections.copy(a, b)， a={y,z},是把b的元素按照index放到a中。</p>
+<p>Copy b[1,2,3] to  a[4,5,6,7,8] =&gt; [1,2,3,7,8]</p>
+<p>注意a的长度要大于等于b的长度，会报IndexOutOfBounds异常。</p>
+<p>注意：这里特意用对象是因为这两个方法使用的都是原对象的引用。</p>
+<p>如果涉及到list中对象的修改，<strong>最好不用使用这两个方法。可以使用深克隆来解决问题</strong>（注意使用深克隆时单例对象的问题，比如logger）。</p>
+</blockquote>
+</li>
+<li><p><code>boolean repLaceALL(List list，Object oldVaL，object newVal )</code> :替换新值</p>
+</li>
+<li><p><code>collections</code>类中提供了多个<code>synchronizedXxx()</code>方法，该方法可使将指定集合包装成线程同步的集合，从而可以解决多线程并发访问集合时的线程安全问题</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List list1 = Collections.synchronizedList(list);</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+      <a rel="prev" class="post-nav-item mdui-float-left" href="/2021/10/12/%E6%B3%9B%E5%9E%8B/">
+        <i class="iconfont icon-angle-left"></i>
+        <span>Java高级</span>
+      </a>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2021/10/12/java8/">
+        <span></span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2021/10/12/java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5/" id="toc-header" class="mdui-ripple">文章目录</a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java%E9%AB%98%E7%BA%A7%E9%98%B6%E6%AE%B5"><span class="toc-number">1.</span> <span class="toc-text">Java高级阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B"><span class="toc-number">1.1.</span> <span class="toc-text">线程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%9B%9E%E6%94%B6"><span class="toc-number">1.1.1.</span> <span class="toc-text">线程创建与回收</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%80-%E5%88%9B%E5%BB%BAThread%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">方式一:创建Thread对象</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%BF%E5%90%8D%E5%AD%90%E7%B1%BB"><span class="toc-number">1.1.1.1.1.</span> <span class="toc-text">匿名子类</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%BA%8C-%E5%AE%9E%E7%8E%B0Runnable%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">方式二:实现Runnable接口</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%BC%82%E5%90%8C"><span class="toc-number">1.1.1.2.1.</span> <span class="toc-text">两种方式异同</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Thread%E4%BD%9C%E7%94%A8"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">Thread作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Thread%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.1.4.</span> <span class="toc-text">Thread相关方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-number">1.1.1.5.</span> <span class="toc-text">线程优先级</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">1.1.2.</span> <span class="toc-text">线程生命周期</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5"><span class="toc-number">1.1.3.</span> <span class="toc-text">线程同步</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">同步代码块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">同步方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">1.1.3.2.1.</span> <span class="toc-text">快捷键</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">双重检查锁</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ReentrantLock"><span class="toc-number">1.1.3.4.</span> <span class="toc-text">ReentrantLock</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#synchronized%E4%B8%8EReentrantLock%E5%8C%BA%E5%88%AB"><span class="toc-number">1.1.3.5.</span> <span class="toc-text">synchronized与ReentrantLock区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BB%BA%E8%AE%AE%E9%A1%BA%E5%BA%8F"><span class="toc-number">1.1.3.6.</span> <span class="toc-text">建议顺序</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1"><span class="toc-number">1.1.4.</span> <span class="toc-text">线程通信</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jdk5-0%E6%96%B0%E6%96%B9%E5%BC%8F"><span class="toc-number">1.1.5.</span> <span class="toc-text">Jdk5.0新方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Callable%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.1.5.1.</span> <span class="toc-text">Callable接口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E6%B1%A0"><span class="toc-number">1.1.5.2.</span> <span class="toc-text">线程池???????</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#ExecutorService%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.1.5.2.1.</span> <span class="toc-text">ExecutorService接口</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E5%B8%B8%E7%94%A8%E7%B1%BB"><span class="toc-number">1.2.</span> <span class="toc-text">Java常用类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2String"><span class="toc-number">1.2.1.</span> <span class="toc-text">字符串String</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#StringBuffer-Builder"><span class="toc-number">1.2.2.</span> <span class="toc-text">StringBuffer&#x2F;Builder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Date"><span class="toc-number">1.2.3.</span> <span class="toc-text">Date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SimpleDateFormat"><span class="toc-number">1.2.4.</span> <span class="toc-text">SimpleDateFormat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Calendar"><span class="toc-number">1.2.5.</span> <span class="toc-text">Calendar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-time-localDateTime"><span class="toc-number">1.2.6.</span> <span class="toc-text">Java.time.localDateTime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-time-Instant"><span class="toc-number">1.2.7.</span> <span class="toc-text">Java.time.Instant</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DateTimeFormatter"><span class="toc-number">1.2.8.</span> <span class="toc-text">DateTimeFormatter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java%E6%AF%94%E8%BE%83%E5%99%A8"><span class="toc-number">1.2.9.</span> <span class="toc-text">Java比较器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E7%84%B6%E6%8E%92%E5%BA%8Fjava-Lang-Comparable"><span class="toc-number">1.2.9.1.</span> <span class="toc-text">自然排序java.Lang.Comparable</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E5%88%B6%E6%8E%92%E5%BA%8F-%E6%AF%94%E8%BE%83%E5%99%A8-java-util-Comparator"><span class="toc-number">1.2.9.2.</span> <span class="toc-text">定制排序 比较器 java.util.Comparator</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%9A%E4%B8%BE%E7%B1%BB"><span class="toc-number">1.2.10.</span> <span class="toc-text">枚举类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#jdk5-0%E4%B9%8B%E5%89%8D%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9E%9A%E4%B8%BE%E7%B1%BB"><span class="toc-number">1.2.10.1.</span> <span class="toc-text">jdk5.0之前自定义枚举类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#jdk5-0-%E4%BB%A5%E5%90%8E-%E4%BD%BF%E7%94%A8enum%E5%85%B3%E9%94%AE%E5%AD%97%E5%AE%9A%E4%B9%89"><span class="toc-number">1.2.10.2.</span> <span class="toc-text">jdk5.0 以后 使用enum关键字定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ENUM"><span class="toc-number">1.2.10.3.</span> <span class="toc-text">ENUM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%9A%E4%B8%BE%E7%B1%BB%E7%BB%A7%E6%89%BF%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.2.10.4.</span> <span class="toc-text">枚举类继承接口</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E8%A7%A3-Annotation"><span class="toc-number">1.3.</span> <span class="toc-text">注解(Annotation)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">使用示例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#jdk5-0-%E4%BB%A5%E5%90%8E%E6%8F%90%E4%BE%9B4%E4%B8%AA%E6%A0%87%E5%87%86%E7%9A%84Meta-annotation"><span class="toc-number">1.3.0.2.</span> <span class="toc-text">jdk5.0 以后提供4个标准的Meta-annotation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#jdk8"><span class="toc-number">1.3.0.3.</span> <span class="toc-text">jdk8</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%AF%E9%87%8D%E5%A4%8D%E6%B3%A8%E8%A7%A3"><span class="toc-number">1.3.0.3.1.</span> <span class="toc-text">可重复注解</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3"><span class="toc-number">1.3.0.3.2.</span> <span class="toc-text">类型注解</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6"><span class="toc-number">1.4.</span> <span class="toc-text">集合框架</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Collection-%E5%8D%95%E5%88%97%E9%9B%86%E5%90%88-%E5%86%85%E9%83%A8%E8%A3%85%E7%9A%84%E9%83%BD%E6%98%AF%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.4.0.1.</span> <span class="toc-text">Collection   单列集合 内部装的都是对象</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-number">1.4.0.1.1.</span> <span class="toc-text">方法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#List-%E5%85%83%E7%B4%A0%E6%9C%89%E5%BA%8F-%E5%8F%AF%E9%87%8D%E5%A4%8D%E7%9A%84%E5%88%97%E8%A1%A8"><span class="toc-number">1.4.0.2.</span> <span class="toc-text">List:元素有序,可重复的列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Iterator%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="toc-number">1.4.0.3.</span> <span class="toc-text">Iterator迭代器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#foreach"><span class="toc-number">1.4.0.4.</span> <span class="toc-text">foreach</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Set%E6%8E%A5%E5%8F%A3-%E5%85%83%E7%B4%A0%E6%97%A0%E5%BA%8F-%E4%B8%8D%E5%8F%AF%E9%87%8D%E5%A4%8D%E7%9A%84%E9%9B%86%E5%90%88"><span class="toc-number">1.4.0.5.</span> <span class="toc-text">Set接口:元素无序,不可重复的集合</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Map"><span class="toc-number">1.4.0.6.</span> <span class="toc-text">Map</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HashMap-jdk8"><span class="toc-number">1.4.0.7.</span> <span class="toc-text">HashMap jdk8</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#properties-%E4%BD%BF%E7%94%A8String-%E5%AD%98%E5%82%A8%E9%94%AE%E5%80%BC%E5%AF%B9"><span class="toc-number">1.4.0.8.</span> <span class="toc-text">properties (使用String 存储键值对)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Collections-%E5%B7%A5%E5%85%B7%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8-%E5%8F%AF%E4%BB%A5%E6%93%8D%E4%BD%9CMap"><span class="toc-number">1.4.0.9.</span> <span class="toc-text">Collections 工具类的使用(可以操作Map)</span></a></li></ol></li></ol></li></ol></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2021 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        Lilia
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "forest"
+    });</script>
+
+
+
+
+    
+<script src="/js/mdui.min.v1.0.0.js"></script>
+
+
+
+
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
